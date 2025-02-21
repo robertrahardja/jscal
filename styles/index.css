@@ -1,3 +1,6 @@
+@import "./nav.css";
+@import "./sidebar.css";
+
 * {
   font-family: ui-sans-serif, system-ui, sans-serif;
   margin: 0;
@@ -12,6 +15,7 @@ body {
 }
 
 :root {
+  --color-gray-300: #d1d5db;
   --color-text-dark: #030712;
 }
 
