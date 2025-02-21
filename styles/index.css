@@ -1,6 +1,20 @@
-@import "./nav.css";
-@import "./sidebar.css";
 @import "./button.css";
+@import "./color-select.css";
+@import "./dialog.css";
+@import "./event-details.css";
+@import "./event-list.css";
+@import "./event.css";
+@import "./fab.css";
+@import "./form.css";
+@import "./input.css";
+@import "./mini-calendar.css";
+@import "./nav.css";
+@import "./month-calendar.css";
+@import "./scroll.css";
+@import "./select.css";
+@import "./sidebar.css";
+@import "./toaster.css";
+@import "./week-calendar.css";
 @import "./responsive.css";
 
 * {
@@ -54,11 +68,14 @@ body {
 
   --color-text-light: #f9fafb;
   --color-text-dark: #030712;
+
+  --box-shadow-md: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --box-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
 }
 
 .app {
-  display: grid;
-  grid-template-columns: auto 1fr;
   height: 100vh;
 }
 
@@ -70,4 +87,11 @@ body {
 
 .calendar {
   height: 100%;
+}
+
+@media (min-width: 768px) {
+  .app {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
 }
