@@ -14,3 +14,19 @@ body {
 :root {
   --color-text-dark: #030712;
 }
+
+.app {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.calendar {
+  height: 100%;
+}
